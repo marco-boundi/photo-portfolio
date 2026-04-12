@@ -1,0 +1,59 @@
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+
+  /* Hide anything you don't want in PDF */
+  nav,
+  button,
+  .no-print {
+    display: none !important;
+  }
+
+  /* Force each section onto its own page */
+  section {
+    break-after: page;
+    page-break-after: always;
+  }
+
+  /* Avoid awkward splits inside important blocks */
+  .keep-together {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+    break-inside: avoid;
+  }
+
+  /* Remove oversized spacing for print */
+  .py-24,
+  .py-16,
+  .py-12 {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+
+  .mb-32,
+  .mb-24 {
+    margin-bottom: 1rem !important;
+  }
+
+  .print-page {
+    break-after: page;
+    page-break-after: always;
+  }
+
+  .keep-together {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  @page {
+    size: A4;
+    margin: 12mm;
+  }
+}
