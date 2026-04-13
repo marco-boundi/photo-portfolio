@@ -1,12 +1,8 @@
 <div class="min-h-screen bg-white">
-  <!-- Cover Page -->
+
   <section class="relative h-[60vh] flex items-end">
     <div class="absolute inset-0">
-      <app-image-with-fallback
-        src="images/Various-3912-2.jpg"
-        alt="Walkin' on the Horizon"
-        className="w-full h-full object-cover"
-      ></app-image-with-fallback>
+      <img class="w-full h-full object-cover" ngSrc="/images/Various-3912-2.jpg" alt="Walkin' on the Horizon" fill>
       <div class="absolute inset-0 bg-black/40"></div>
     </div>
     <div class="relative z-10 max-w-7xl mx-auto px-12 pb-16 w-full">
@@ -19,7 +15,6 @@
     </div>
   </section>
 
-  <!-- Professional Summary -->
   <section class="max-w-7xl mx-auto px-12 py-24">
     <div class="grid grid-cols-12 gap-16">
       <div class="col-span-8">
@@ -57,7 +52,6 @@
     </div>
   </section>
 
-  <!-- Services -->
   <section class="bg-neutral-50 py-24">
     <div class="max-w-7xl mx-auto px-12">
       <h2 class="text-5xl mb-16">Services</h2>
@@ -84,11 +78,9 @@
     </div>
   </section>
 
-  <!-- Client Work Portfolio -->
   <section class="max-w-7xl mx-auto px-12 py-24">
     <h2 class="text-5xl mb-24">Projets clients</h2>
 
-    <!-- Project 1: Vogue Magazine -->
     <div class="mb-32">
       <div class="grid grid-cols-12 gap-8 mb-12">
         <div class="col-span-4">
@@ -104,48 +96,51 @@
       </div>
       <div class="grid grid-cols-3 gap-6">
         <div class="col-span-2 relative group overflow-hidden">
-          <app-image-with-fallback
-            src="images/Printemps du rire/Various-5241.jpg"
-            alt="Adel Fugazi"
-            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-          ></app-image-with-fallback>
+          <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" ngSrc="/images/Printemps du rire/Various-5241.jpg" alt="Adel Fugazi" fill>
         </div>
         <div class="space-y-9">
           <div class="relative group overflow-hidden">
-            <app-image-with-fallback
-              src="images/Printemps du rire/Various-5280.jpg"
+            <img
+              ngSrc="/images/Printemps du rire/Various-5280.jpg"
               alt="Light Show"
-              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-            ></app-image-with-fallback>
+              width="4160"
+              height="6240"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            />
           </div>
           <div class="relative group overflow-hidden">
-            <app-image-with-fallback
-              src="images/Printemps du rire/Various-5131.jpg"
+            <img
+              ngSrc="/images/Printemps du rire/Various-5131.jpg"
               alt="Light Show"
-              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-            ></app-image-with-fallback>
+              width="4160"
+              height="6240"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            />
           </div>
         </div>
       </div>
       <div class="grid grid-cols-2 gap-6 mt-6">
         <div class="aspect-[3/2] relative group overflow-hidden">
-          <app-image-with-fallback
-            src="images/Printemps du rire/Various-5258.jpg"
+          <img
+            ngSrc="/images/Printemps du rire/Various-5258.jpg"
             alt="Zenith"
-            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-          ></app-image-with-fallback>
+            width="6240"
+            height="4160"
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          />
         </div>
         <div class="aspect-[3/2] relative group overflow-hidden">
-          <app-image-with-fallback
-            src="images/Printemps du rire/Various-5256.jpg"
+          <img
+            ngSrc="/images/Printemps du rire/Various-5256.jpg"
             alt="Zenith"
-            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-          ></app-image-with-fallback>
+            width="6240"
+            height="4160"
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          />
         </div>
       </div>
     </div>
 
-    <!-- Project 2: Nike Inc. -->
     <div class="mb-32">
       <div class="grid grid-cols-12 gap-8 mb-12">
         <div class="col-span-3">
@@ -161,30 +156,35 @@
       </div>
       <div class="grid grid-cols-2 gap-6 mb-6">
         <div class="relative group overflow-hidden">
-          <app-image-with-fallback
-            src="images/Pink Paradize/Various-4022.jpg"
+          <img
+            ngSrc="/images/Pink Paradize/Various-4022.jpg"
             alt="Bikini"
-            className="w-full h-full object-cover object-[70%_50%] transition-transform duration-500 group-hover:scale-105"
-          ></app-image-with-fallback>
+            width="6240"
+            height="4160"
+            class="w-full h-full object-cover object-[70%_50%] transition-transform duration-500 group-hover:scale-105"
+          />
         </div>
         <div class="relative group overflow-hidden">
-          <app-image-with-fallback
-            src="images/Pink Paradize/Various-4136.jpg"
+          <img
+            ngSrc="/images/Pink Paradize/Various-4136.jpg"
             alt="Bikini"
-            className="w-full h-full transition-transform duration-500 group-hover:scale-105"
-          ></app-image-with-fallback>
+            width="4160"
+            height="6240"
+            class="w-full h-full transition-transform duration-500 group-hover:scale-105"
+          />
         </div>
       </div>
       <div class="relative group overflow-hidden">
-        <app-image-with-fallback
-          src="images/Pink Paradize/Various-4128.jpg"
+        <img
+          ngSrc="/images/Pink Paradize/Various-4128.jpg"
           alt="Bikini"
-          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-        ></app-image-with-fallback>
+          width="6240"
+          height="4160"
+          class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+        />
       </div>
     </div>
 
-    <!-- Project 3: Architectural Digest -->
     <div class="mb-32">
       <div class="grid grid-cols-12 gap-8 mb-12">
         <div class="col-span-3">
@@ -200,37 +200,44 @@
       </div>
       <div class="grid grid-cols-3 gap-6 mb-6">
         <div class="relative group overflow-hidden">
-          <app-image-with-fallback
-            src="images/Outlines/Various-4267.jpg"
+          <img
+            ngSrc="/images/Outlines/Various-4267.jpg"
             alt="Rex"
-            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-          ></app-image-with-fallback>
+            width="4160"
+            height="6240"
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          />
         </div>
         <div class="relative group overflow-hidden">
-          <app-image-with-fallback
-            src="images/Outlines/Various-4393.jpg"
+          <img
+            ngSrc="/images/Outlines/Various-4393.jpg"
             alt="Rex"
-            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-          ></app-image-with-fallback>
+            width="4160"
+            height="6240"
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          />
         </div>
         <div class="relative group overflow-hidden">
-          <app-image-with-fallback
-            src="images/Outlines/Various-4466.jpg"
+          <img
+            ngSrc="/images/Outlines/Various-4466.jpg"
             alt="Rex"
-            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-          ></app-image-with-fallback>
+            width="4160"
+            height="6240"
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          />
         </div>
       </div>
       <div class="relative group overflow-hidden">
-        <app-image-with-fallback
-          src="images/Outlines/Various-4400.jpg"
+        <img
+          ngSrc="/images/Outlines/Various-4400.jpg"
           alt="Rex"
-          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-        ></app-image-with-fallback>
+          width="6240"
+          height="4160"
+          class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+        />
       </div>
     </div>
 
-    <!-- Project 4: Four Seasons Hotels -->
     <div class="mb-32">
       <div class="grid grid-cols-12 gap-8 mb-12">
         <div class="col-span-3">
@@ -245,38 +252,45 @@
         </div>
       </div>
       <div class="relative group overflow-hidden mb-6">
-        <app-image-with-fallback
-          src="images/Kontroll Tek/Various-3758.jpg"
+        <img
+          ngSrc="/images/Kontroll Tek/Various-3758.jpg"
           alt="FMR"
-          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-        ></app-image-with-fallback>
+          width="6240"
+          height="4160"
+          class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+        />
       </div>
       <div class="grid grid-cols-3 gap-6">
         <div class="aspect-square relative group overflow-hidden">
-          <app-image-with-fallback
-            src="images/Kontroll Tek/Various-3759.jpg"
+          <img
+            ngSrc="/images/Kontroll Tek/Various-3759.jpg"
             alt="FMR"
-            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-          ></app-image-with-fallback>
+            width="6240"
+            height="4160"
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          />
         </div>
         <div class="aspect-square relative group overflow-hidden">
-          <app-image-with-fallback
-            src="images/Kontroll Tek/Various-3858.jpg"
+          <img
+            ngSrc="/images/Kontroll Tek/Various-3858.jpg"
             alt="FMR"
-            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-          ></app-image-with-fallback>
+            width="6240"
+            height="4160"
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          />
         </div>
         <div class="aspect-square relative group overflow-hidden">
-          <app-image-with-fallback
-            src="images/Kontroll Tek/Various-3876.jpg"
+          <img
+            ngSrc="/images/Kontroll Tek/Various-3876.jpg"
             alt="FMR"
-            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-          ></app-image-with-fallback>
+            width="6240"
+            height="4160"
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          />
         </div>
       </div>
     </div>
 
-    <!-- Project 5: Bloomberg Businessweek -->
     <div class="mb-24">
       <div class="grid grid-cols-12 gap-8 mb-12">
         <div class="col-span-3">
@@ -292,40 +306,47 @@
       </div>
       <div class="grid grid-cols-2 gap-6 mb-6">
         <div class="aspect-[4/5] relative group overflow-hidden">
-          <app-image-with-fallback
-            src="images/Quiet Office/DSCF6394.jpg"
+          <img
+            ngSrc="/images/Quiet Office/DSCF6394.jpg"
             alt="Quiet office"
-            className="w-full h-full object-cover object-right transition-transform duration-500 group-hover:scale-105"
-          ></app-image-with-fallback>
+            width="6240"
+            height="4160"
+            class="w-full h-full object-cover object-right transition-transform duration-500 group-hover:scale-105"
+          />
         </div>
         <div class="aspect-[4/5] relative group overflow-hidden">
-          <app-image-with-fallback
-            src="images/Quiet Office/DSCF6448 (2).jpg"
+          <img
+            ngSrc="/images/Quiet Office/DSCF6448 (2).jpg"
             alt="Quiet office"
-            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-          ></app-image-with-fallback>
+            width="6240"
+            height="4160"
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          />
         </div>
       </div>
       <div class="grid grid-cols-2 gap-6">
         <div class="relative group overflow-hidden">
-          <app-image-with-fallback
-            src="images/Quiet Office/DSCF6456 (3).jpg"
+          <img
+            ngSrc="/images/Quiet Office/DSCF6456 (3).jpg"
             alt="Quiet office"
-            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-          ></app-image-with-fallback>
+            width="6240"
+            height="4160"
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          />
         </div>
         <div class="aspect-[3/2] relative group overflow-hidden">
-          <app-image-with-fallback
-            src="images/Quiet Office/DSCF6473 (2).jpg"
+          <img
+            ngSrc="/images/Quiet Office/DSCF6473 (2).jpg"
             alt="Quiet office"
-            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-          ></app-image-with-fallback>
+            width="6240"
+            height="4160"
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          />
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Personal Projects -->
   <section class="bg-neutral-50 py-24">
     <div class="max-w-7xl mx-auto px-12">
       <h2 class="text-5xl mb-24">Projets Persos</h2>
@@ -342,33 +363,41 @@
           <div class="col-span-8">
             <div class="grid grid-cols-3 gap-6 mb-6">
               <div class="relative group overflow-hidden">
-                <app-image-with-fallback
-                  src="images/Jumpin/Various-3311.jpg"
+                <img
+                  ngSrc="/images/Jumpin/Various-3311.jpg"
                   alt="Jumpin"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                ></app-image-with-fallback>
+                  width="1090"
+                  height="1635"
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
               </div>
               <div class="relative group overflow-hidden">
-                <app-image-with-fallback
-                  src="images/Jumpin/Various-3307.jpg"
+                <img
+                  ngSrc="/images/Jumpin/Various-3307.jpg"
                   alt="Jumpin"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                ></app-image-with-fallback>
+                  width="2209"
+                  height="3314"
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
               </div>
               <div class="relative group overflow-hidden">
-                <app-image-with-fallback
-                  src="images/Jumpin/Various-3315.jpg"
+                <img
+                  ngSrc="/images/Jumpin/Various-3315.jpg"
                   alt="Jumpin"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                ></app-image-with-fallback>
+                  width="1362"
+                  height="2043"
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
               </div>
             </div>
             <div class="relative group overflow-hidden mb-6">
-              <app-image-with-fallback
-                src="images/Various-3912-2.jpg"
+              <img
+                ngSrc="/images/Various-3912-2.jpg"
                 alt="Jumpin"
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-              ></app-image-with-fallback>
+                width="5114"
+                height="3409"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
             </div>
           </div>
         </div>
@@ -385,33 +414,41 @@
           </div>
           <div class="col-span-8">
             <div class="relative group overflow-hidden mb-6">
-              <app-image-with-fallback
-                src="images/Street/Various-3606.jpg"
+              <img
+                ngSrc="/images/Street/Various-3606.jpg"
                 alt="Street"
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-              ></app-image-with-fallback>
+                width="4854"
+                height="3236"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
             </div>
             <div class="grid grid-cols-3 gap-6">
               <div class="relative group overflow-hidden">
-                <app-image-with-fallback
-                  src="images/Street/Various-2862.jpg"
+                <img
+                  ngSrc="/images/Street/Various-2862.jpg"
                   alt="Street"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                ></app-image-with-fallback>
+                  width="4160"
+                  height="6240"
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
               </div>
               <div class="relative group overflow-hidden">
-                <app-image-with-fallback
-                  src="images/Street/Various-1348.jpg"
+                <img
+                  ngSrc="/images/Street/Various-1348.jpg"
                   alt="Street"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                ></app-image-with-fallback>
+                  width="900"
+                  height="1350"
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
               </div>
               <div class="relative group overflow-hidden">
-                <app-image-with-fallback
-                  src="images/Street/Various-2863.jpg"
+                <img
+                  ngSrc="/images/Street/Various-2863.jpg"
                   alt="Street"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                ></app-image-with-fallback>
+                  width="2971"
+                  height="4160"
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
               </div>
             </div>
           </div>
@@ -431,26 +468,32 @@
           <div class="col-span-8">
             <div class="grid grid-cols-2 gap-6 mb-6">
               <div class="relative group overflow-hidden">
-                <app-image-with-fallback
-                  src="images/Tbourida/Various-3923.jpg"
+                <img
+                  ngSrc="/images/Tbourida/Various-3923.jpg"
                   alt="Tbourida"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                ></app-image-with-fallback>
+                  width="5425"
+                  height="3617"
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
               </div>
               <div class="relative group overflow-hidden">
-                <app-image-with-fallback
-                  src="images/Tbourida/DSCF4583.jpeg"
+                <img
+                  ngSrc="/images/Tbourida/DSCF4583.jpeg"
                   alt="Tbourida"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                ></app-image-with-fallback>
+                  width="1687"
+                  height="948"
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
               </div>
             </div>
             <div class="relative group overflow-hidden">
-              <app-image-with-fallback
-                src="images/Tbourida/Various-3922.jpg"
+              <img
+                ngSrc="/images/Tbourida/Various-3922.jpg"
                 alt="Tbourida"
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-              ></app-image-with-fallback>
+                width="5561"
+                height="3707"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
             </div>
           </div>
         </div>
@@ -458,16 +501,17 @@
     </div>
   </section>
 
-  <!-- Awards & Recognition -->
   <section class="max-w-7xl mx-auto px-12 py-24">
     <h2 class="text-5xl mb-16">Prix et distinctions</h2>
     <div class="flex gap-12 items-center">
       <div class="relative group overflow-hidden flex-shrink-0 max-w-md">
-        <app-image-with-fallback
-          src="images/Various-3912-2.jpg"
+        <img
+          ngSrc="/images/Various-3912-2.jpg"
           alt="Award"
-          className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-105"
-        ></app-image-with-fallback>
+          width="5114"
+          height="3409"
+          class="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-105"
+        />
       </div>
       <div class="flex-1">
         <h3 class="text-3xl mb-4">Paris International Street Photo Award (PISPA)</h3>
@@ -541,7 +585,6 @@
 <!--    </div>-->
 <!--  </section>-->
 
-  <!-- Contact -->
   <section class="bg-black text-white py-24">
     <div class="max-w-7xl mx-auto px-12">
       <h2 class="text-5xl mb-16">Contact</h2>

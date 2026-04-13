@@ -1,5 +1,4 @@
-import { Component, signal } from '@angular/core';
-import { ImageWithFallbackComponent } from './components/figma/image-with-fallback';
+import { Component } from '@angular/core';
 import {
   LucideAngularModule,
   Mail,
@@ -11,17 +10,16 @@ import {
   Users,
   Briefcase
 } from 'lucide-angular';
+import { NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [ImageWithFallbackComponent, LucideAngularModule],
+  imports: [LucideAngularModule, NgOptimizedImage],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('photo-press-kit');
-
   readonly icons = {
     Mail,
     Phone,
