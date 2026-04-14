@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import {
   LucideAngularModule,
   Mail,
@@ -11,11 +11,12 @@ import {
   Briefcase
 } from 'lucide-angular';
 import { NgOptimizedImage } from '@angular/common';
+import { LightboxComponent } from './components/lightbox/lightbox.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [LucideAngularModule, NgOptimizedImage],
+  imports: [LucideAngularModule, NgOptimizedImage, LightboxComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
@@ -30,4 +31,14 @@ export class App {
     Users,
     Briefcase
   };
+
+  selectedImage = signal<string | null>(null);
+
+  openLightbox(url: string) {
+    this.selectedImage.set(url);
+  }
+
+  closeLightbox() {
+    this.selectedImage.set(null);
+  }
 }
