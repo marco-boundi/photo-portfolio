@@ -1,35 +1,37 @@
 import { Component, signal } from '@angular/core';
-import {
-  LucideAngularModule,
-  Mail,
-  Phone,
-  Globe,
-  MapPin,
-  Award,
-  Camera,
-  Users,
-  Briefcase
-} from 'lucide-angular';
 import { NgOptimizedImage } from '@angular/common';
 import { LightboxComponent } from './components/lightbox/lightbox.component';
+import { provideLucideIcons, LucideMail, LucidePhone, LucideGlobe, LucideMapPin, LucideAward, LucideCamera, LucideUsers, LucideBriefcase } from '@lucide/angular';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [LucideAngularModule, NgOptimizedImage, LightboxComponent],
+  imports: [NgOptimizedImage, LightboxComponent, LucideBriefcase, LucideUsers, LucideAward, LucideMail, LucidePhone, LucideMapPin],
+  providers: [
+    provideLucideIcons(
+      LucideMail,
+      LucidePhone,
+      LucideGlobe,
+      LucideMapPin,
+      LucideAward,
+      LucideCamera,
+      LucideUsers,
+      LucideBriefcase
+    ),
+  ],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
   readonly icons = {
-    Mail,
-    Phone,
-    Globe,
-    MapPin,
-    Award,
-    Camera,
-    Users,
-    Briefcase
+    LucideMail,
+    LucidePhone,
+    LucideGlobe,
+    LucideMapPin,
+    LucideAward,
+    LucideCamera,
+    LucideUsers,
+    LucideBriefcase
   };
 
   selectedImage = signal<string | null>(null);

@@ -1,11 +1,11 @@
 import { Component, EventEmitter, Input, Output, signal, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { LucideAngularModule, X } from 'lucide-angular';
+import { LucideX} from '@lucide/angular';
 
 @Component({
   selector: 'app-lightbox',
   standalone: true,
-  imports: [CommonModule, LucideAngularModule],
+  imports: [CommonModule, LucideX],
   template: `
     @if (imageUrl()) {
     <div
@@ -17,7 +17,7 @@ import { LucideAngularModule, X } from 'lucide-angular';
         class="absolute top-6 right-6 p-2 text-white/50 hover:text-white transition-all z-110 hover:scale-110 active:scale-95"
         (click)="close(); $event.stopPropagation()"
       >
-        <lucide-icon [name]="icons.X" class="w-8 h-8"></lucide-icon>
+        <svg lucideX></svg>
       </button>
 
       <!-- Image container -->
@@ -48,8 +48,6 @@ export class LightboxComponent {
   }
 
   @Output() closed = new EventEmitter<void>();
-
-  readonly icons = { X };
 
   close() {
     this.imageUrl.set(null);
