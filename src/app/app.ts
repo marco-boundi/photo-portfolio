@@ -1,12 +1,31 @@
-import { Component, signal } from '@angular/core';
+import { Component, signal, ChangeDetectionStrategy } from '@angular/core';
 import { NgOptimizedImage } from '@angular/common';
 import { LightboxComponent } from './components/lightbox/lightbox.component';
-import { provideLucideIcons, LucideMail, LucidePhone, LucideGlobe, LucideMapPin, LucideAward, LucideCamera, LucideUsers, LucideBriefcase } from '@lucide/angular';
+import {
+  provideLucideIcons,
+  LucideMail,
+  LucidePhone,
+  LucideGlobe,
+  LucideMapPin,
+  LucideAward,
+  LucideCamera,
+  LucideUsers,
+  LucideBriefcase,
+} from '@lucide/angular';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [NgOptimizedImage, LightboxComponent, LucideBriefcase, LucideUsers, LucideAward, LucideMail, LucidePhone, LucideMapPin],
+  imports: [
+    NgOptimizedImage,
+    LightboxComponent,
+    LucideBriefcase,
+    LucideUsers,
+    LucideAward,
+    LucideMail,
+    LucidePhone,
+    LucideMapPin,
+  ],
   providers: [
     provideLucideIcons(
       LucideMail,
@@ -16,11 +35,12 @@ import { provideLucideIcons, LucideMail, LucidePhone, LucideGlobe, LucideMapPin,
       LucideAward,
       LucideCamera,
       LucideUsers,
-      LucideBriefcase
+      LucideBriefcase,
     ),
   ],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  changeDetection: ChangeDetectionStrategy.Eager,
+  styleUrl: './app.css',
 })
 export class App {
   readonly icons = {
@@ -31,7 +51,7 @@ export class App {
     LucideAward,
     LucideCamera,
     LucideUsers,
-    LucideBriefcase
+    LucideBriefcase,
   };
 
   selectedImage = signal<string | null>(null);
