@@ -1,27 +1,11 @@
 import { Component, signal } from '@angular/core';
+import { SHARED_IMPORTS } from '../shared/shared-imports';
+import { HOME_ICON_IMPORTS } from '../shared/icons/home-icons';
 import { LightboxComponent } from '../components/lightbox/lightbox.component';
-import {
-  LucideAward,
-  LucideBriefcase,
-  LucideMail,
-  LucideMapPin,
-  LucidePhone,
-  LucideUsers,
-} from '@lucide/angular';
-import { NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'app-home',
-  imports: [
-    LightboxComponent,
-    LucideAward,
-    LucideBriefcase,
-    LucideMail,
-    LucideMapPin,
-    LucidePhone,
-    LucideUsers,
-    NgOptimizedImage,
-  ],
+  imports: [...SHARED_IMPORTS, ...HOME_ICON_IMPORTS, LightboxComponent],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })
