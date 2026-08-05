@@ -2,13 +2,10 @@ import { Component, signal, ChangeDetectionStrategy } from '@angular/core';
 import { NgOptimizedImage } from '@angular/common';
 import { LightboxComponent } from './components/lightbox/lightbox.component';
 import {
-  provideLucideIcons,
   LucideMail,
   LucidePhone,
-  LucideGlobe,
   LucideMapPin,
   LucideAward,
-  LucideCamera,
   LucideUsers,
   LucideBriefcase,
 } from '@lucide/angular';
@@ -26,34 +23,12 @@ import {
     LucidePhone,
     LucideMapPin,
   ],
-  providers: [
-    provideLucideIcons(
-      LucideMail,
-      LucidePhone,
-      LucideGlobe,
-      LucideMapPin,
-      LucideAward,
-      LucideCamera,
-      LucideUsers,
-      LucideBriefcase,
-    ),
-  ],
+  providers: [],
   templateUrl: './app.html',
   changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './app.css',
 })
 export class App {
-  readonly icons = {
-    LucideMail,
-    LucidePhone,
-    LucideGlobe,
-    LucideMapPin,
-    LucideAward,
-    LucideCamera,
-    LucideUsers,
-    LucideBriefcase,
-  };
-
   selectedImage = signal<string | null>(null);
 
   openLightbox(url: string) {

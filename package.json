@@ -6,7 +6,8 @@
     "start": "ng serve & tailwindcss -i src/styles.css -o src/styles.min.css --watch",
     "build": "tailwindcss -i src/styles.css -o src/styles.min.css && ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "format": "prettier --write \"src/**/*.{ts,html,scss,css,json}\""
   },
   "private": true,
   "packageManager": "npm@10.9.3",
@@ -30,7 +31,7 @@
     "autoprefixer": "^10.5.4",
     "jsdom": "^28.0.0",
     "postcss": "^8.5.25",
-    "prettier": "^3.9.6",
+    "prettier": "3.9.6",
     "tailwindcss": "^4.3.3",
     "typescript": "~6.0.3",
     "vitest": "^4.1.10"
