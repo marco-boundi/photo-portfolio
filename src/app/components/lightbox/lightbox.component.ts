@@ -1,12 +1,4 @@
-import {
-  Component,
-  EventEmitter,
-  Input,
-  Output,
-  signal,
-  HostListener,
-  ChangeDetectionStrategy,
-} from '@angular/core';
+import { Component, EventEmitter, Input, Output, signal, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LucideX } from '@lucide/angular';
 
@@ -42,7 +34,6 @@ import { LucideX } from '@lucide/angular';
       </div>
     }
   `,
-  changeDetection: ChangeDetectionStrategy.Eager,
   styles: [
     `
       :host {
