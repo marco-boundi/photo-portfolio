@@ -1,11 +1,12 @@
 import { Component, EventEmitter, Input, Output, signal, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LucideX } from '@lucide/angular';
+import { SHARED_IMPORTS } from '../../shared/shared-imports';
 
 @Component({
   selector: 'app-lightbox',
   standalone: true,
-  imports: [CommonModule, LucideX],
+  imports: [...SHARED_IMPORTS, CommonModule, LucideX],
   template: `
     @if (imageUrl()) {
       <div
@@ -22,13 +23,16 @@ import { LucideX } from '@lucide/angular';
 
         <!-- Image container -->
         <div
-          class="relative max-w-[95vw] max-h-[95vh] flex items-center justify-center"
+          class="relative flex items-center justify-center"
+          style="width: 85vw; height: 85vh;"
           (click)="$event.stopPropagation()"
         >
           <img
-            [src]="imageUrl()!"
-            class="max-w-full max-h-[90vh] object-contain rounded-sm shadow-[0_0_50px_rgba(0,0,0,0.5)] select-none pointer-events-none"
+            [ngSrc]="imageUrl()!"
+            class="object-contain rounded-sm shadow-[0_0_50px_rgba(0,0,0,0.5)] select-none pointer-events-none"
             alt="Enlarged view"
+            fill
+            priority
           />
         </div>
       </div>

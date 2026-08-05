@@ -10,7 +10,13 @@ import { LightboxComponent } from '../components/lightbox/lightbox.component';
   styleUrl: './home.css',
 })
 export class Home {
+  imageLoaded = signal(false);
   selectedImage = signal<string | null>(null);
+
+  onImageLoad(event: any) {
+    this.imageLoaded.set(true);
+    event.target.classList.add('loaded');
+  }
 
   openLightbox(url: string) {
     this.selectedImage.set(url);

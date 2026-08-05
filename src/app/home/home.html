@@ -4,9 +4,12 @@
     <div class="absolute inset-0">
       <img
         class="w-full h-full object-cover"
-        ngSrc="/images/Various-3912-2.jpg"
+        ngSrc="Ugo Vangi Portfolio/hero.jpg"
         alt="Walkin' on the Horizon"
+        (load)="onImageLoad($event)"
         fill
+        priority
+        placeholder
       />
       <div class="absolute inset-0 bg-black/45"></div>
     </div>
@@ -444,43 +447,47 @@
             <div class="grid grid-cols-3 gap-3 sm:gap-4 md:gap-6 mb-3 sm:mb-4 md:mb-6">
               <div class="relative group overflow-hidden aspect-2/3">
                 <img
-                  ngSrc="/images/Jumpin/Various-3311.jpg"
+                  ngSrc="Ugo Vangi Portfolio/Jumpin/Various-3311.jpg"
                   alt="Jumpin"
                   width="1090"
                   height="1635"
                   class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 cursor-pointer"
-                  (click)="openLightbox('/images/Jumpin/Various-3311.jpg')"
+                  (load)="onImageLoad($event)"
+                  (click)="openLightbox('Ugo Vangi Portfolio/Jumpin/Various-3311.jpg')"
                 />
               </div>
               <div class="relative group overflow-hidden aspect-2/3">
                 <img
-                  ngSrc="/images/Jumpin/Various-3307.jpg"
+                  ngSrc="Ugo Vangi Portfolio/Jumpin/Various-3307.jpg"
                   alt="Jumpin"
                   width="2209"
                   height="3314"
                   class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 cursor-pointer"
-                  (click)="openLightbox('/images/Jumpin/Various-3307.jpg')"
+                  (load)="onImageLoad($event)"
+                  (click)="openLightbox('Ugo Vangi Portfolio/Jumpin/Various-3307.jpg')"
                 />
               </div>
               <div class="relative group overflow-hidden aspect-2/3">
                 <img
-                  ngSrc="/images/Jumpin/Various-3315.jpg"
+                  ngSrc="Ugo Vangi Portfolio/Jumpin/Various-3315.jpg"
                   alt="Jumpin"
                   width="1362"
                   height="2043"
                   class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 cursor-pointer"
-                  (click)="openLightbox('/images/Jumpin/Various-3315.jpg')"
+                  (load)="onImageLoad($event)"
+                  (click)="openLightbox('Ugo Vangi Portfolio/Jumpin/Various-3315.jpg')"
                 />
               </div>
             </div>
             <div class="relative group overflow-hidden">
               <img
-                ngSrc="/images/Various-3912-2.jpg"
+                ngSrc="Ugo Vangi Portfolio/hero.jpg"
                 alt="Jumpin"
                 width="5114"
                 height="3409"
                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 cursor-pointer"
-                (click)="openLightbox('/images/Various-3912-2.jpg')"
+                (load)="onImageLoad($event)"
+                (click)="openLightbox('Ugo Vangi Portfolio/hero.jpg')"
               />
             </div>
           </div>
